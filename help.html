@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#191919">
+  <title>Central de Ajuda — Jetroh</title>
+  <link rel="icon" type="image/svg+xml" href="assets/section6/logo_jetroh.svg">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{background:#191919;color:#e9e9e6}
+    .help-page{min-height:100vh;padding:130px 0 100px}
+    .help-wrap{width:min(872px,82vw);margin:0 auto}
+    .help-title{font-family:Arial,sans-serif;font-weight:400;font-size:46px;margin:0 0 14px}
+    .help-subtitle{color:#a9a9a6;max-width:560px;line-height:1.5;margin:0 0 42px}
+    .help-form{display:grid;gap:16px;margin-bottom:90px}
+    .help-form label{display:grid;gap:8px;font-size:13px;color:#bdbdbb}
+    .help-form input,.help-form textarea{width:100%;border:1px solid #353535;background:#1d1d1d;color:#e9e9e6;border-radius:14px;padding:14px 16px;font:inherit;outline:none}
+    .help-form textarea{min-height:160px;resize:vertical}
+    .help-form input:focus,.help-form textarea:focus{border-color:#666}
+    .help-submit{justify-self:start;border:0;border-radius:999px;background:#e9e9e6;color:#191919;padding:13px 28px;cursor:pointer}
+    .help-faq-title{font-family:Arial,sans-serif;font-weight:400;font-size:36px;text-align:center;margin:0 0 34px}
+    @media(max-width:700px){.help-page{padding:100px 0 70px}.help-wrap{width:74vw}.help-title{font-size:34px}.help-subtitle{font-size:14px}.help-form{margin-bottom:65px}.help-faq-title{font-size:28px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-mini" href="index.html" aria-label="Voltar para a página principal do Jetroh"><img src="assets/section6/logo_jetroh.svg" alt=""><span>JETROH</span></a>
+  </header>
+
+  <main class="help-page">
+    <div class="help-wrap">
+      <h1 class="help-title">Central de Ajuda</h1>
+      <p class="help-subtitle">Encontrou algum erro ou precisa de ajuda? Envie uma descrição para que possamos entender o que aconteceu.</p>
+
+      <form class="help-form">
+        <label>Nome<input type="text" name="nome" autocomplete="name" required></label>
+        <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
+        <label>Qual é o erro?<textarea name="erro" required></textarea></label>
+        <button class="help-submit" type="submit">Enviar</button>
+      </form>
+
+      <h2 class="help-faq-title">Perguntas Frequentes</h2>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">O Jetroh é gratuito?<span>+</span></button><div class="faq-answer"><div><p>O Jetroh terá recursos acessíveis para leitura e estudo, com detalhes de planos apresentados no lançamento.</p></div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">O Jetroh tem uma denominação?<span>+</span></button><div class="faq-answer"><div><p>O aplicativo respeita tradições e denominações, mantendo a Bíblia no centro da experiência.</p></div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">O app é seguro?<span>+</span></button><div class="faq-answer"><div><p>Privacidade e segurança fazem parte da estrutura do produto, especialmente em conteúdos e anotações pessoais.</p></div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">A IA pode errar?<span>+</span></button><div class="faq-answer"><div><p>Sim. Por isso as respostas devem ser conferidas nas referências apresentadas. A IA não substitui discipulado, igreja local ou estudo responsável.</p></div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">Quais ferramentas o Jetroh tem?<span>+</span></button><div class="faq-answer"><div><p>Leitura bíblica, ferramentas de estudo, contexto, textos originais, referências, devocionais, biblioteca, comunidade e assistência por IA.</p></div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">Minhas anotações são privadas?<span>+</span></button><div class="faq-answer"><div><p>As anotações privadas permanecem privadas; conteúdos comunitários dependem da sua escolha de compartilhamento.</p></div></div></div>
+        <div class="faq-item"><button class="faq-question" type="button" aria-expanded="false">Jetroh tem base bíblica?<span>+</span></button><div class="faq-answer"><div><p>A proposta do Jetroh é usar tecnologia como ferramenta para aprofundar a leitura e compreensão das Escrituras.</p></div></div></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
